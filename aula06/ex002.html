@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo JS</title>
+    <style>
+        body{
+            background-color: rgb(105, 105, 173);
+            color: white;
+            font: normal 20pt Arial;
+        }
+        h1{
+            color: rgb(255, 212, 22);
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <p>Já me livrei da maldição!</p>
+
+    <script>
+        var nome = window.prompt('Qual é o seu nome?')
+        window.alert("É um grande prazer em te conhecer, " + nome + "!")// + concatenação
+
+        // + para Adição
+        // + para Concatenação
+
+        var number1 = Number(window.prompt('Digite um número: '))
+        var number2 = Number(window.prompt('Digite outro número: '))
+        var resul = number1 + number2
+
+        
+
+        //OBS: O comando window trata os valores como string, mesmo se digitar um número.
+
+        //Conversão do valor inteiro para String:
+        window.alert(`A soma dos ${number1} e ${number2} é igual á: ${resul}`)// Concatenação e não soma!
+    </script>
+</body>
+</html>

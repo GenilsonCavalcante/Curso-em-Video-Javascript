@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+
+    <style>
+        div#calculadora{
+            background: rgb(162, 223, 213);
+            margin: 10px;
+            padding: 10px;
+            width: 300px;
+            text-align: center;
+        }
+        div#res{
+            text-align: left;
+            font-weight: bold;
+        }
+
+        input#textn1, #textn2{
+            width: 80px;
+            height: 20px;
+        }
+        input#button{
+            padding: 3.3px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="calculadora">
+        <h1>Somando Valores</h1>
+
+        <input type="number" name="textn1" id="textn1"> +
+        <input type="number" name="textn2" id="textn2">
+        <input type="button" value="somar" id="button" onclick="somar()">
+
+        <div id="res">Resultado</div>
+
+    </div>
+
+    <script>
+        function somar(){
+            var tn1 = window.document.getElementById('textn1')
+            var tn2 = window.document.querySelector('input#textn2')
+            var res = window.document.getElementById('res')
+
+            var n1 = Number(tn1.value)//Pegando o valor do texto inserido pelo usuário e convertendo para número.
+            var n2 = Number(tn2.value)
+            var soma = n1 + n2
+
+            res.innerHTML = soma
+        }
+    </script>
+</body>
+</html>

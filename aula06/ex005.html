@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        body{
+            background-color: rgb(58, 158, 224);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p id="msg">Aqui vai o resultado</p>
+    <p id="verde">Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div>Clique em mim</div>
+    <script>
+        window.document.writeln('Hello World')
+        window.document.writeln(window.document.charset)
+        window.document.writeln(window.navigator.appName)
+        window.document.writeln(window.document.URL)
+
+        var p1 = window.document.getElementsByTagName('p')[1]//Selecionado o 1° parágrafo.
+        window.document.writeln(p1.innerHTML)
+        p1.style.color = 'blue'
+
+
+        var corpo = window.document.body
+        corpo.style.background = 'black'
+
+        window.alert(p1.innerText)
+
+
+        //Selecionando elementos por meio de ID
+        var corVerde = window.document.getElementById('verde')
+        corVerde.style.background = 'green'
+        corVerde.innerText = 'Alterado o texto atraves do innerText em JS'
+
+        var nome = window.document.querySelector('p#msg')
+        nome.innerText = 'Hello Boy'
+        
+    </script>
+</body>
+</html>
