@@ -11,4 +11,3 @@ let amigo = {
 
 amigo.engordar(3);
 console.log(`${amigo.nome} pesa ${amigo.peso}Kg`);
-//Alteração......
