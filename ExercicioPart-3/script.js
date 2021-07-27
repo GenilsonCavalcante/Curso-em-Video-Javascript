@@ -6,6 +6,7 @@ function verificar() {
 
     if (fano.value.length == 0 || Number(fano.value) > ano) {
         window.alert('[ERRO] Verifique os dados e tente novamente!');
+        location.reload();
     } else {
         var fsex = document.getElementsByName('radsex');
         var idade = ano - Number(fano.value);
@@ -20,7 +21,7 @@ function verificar() {
     if (fsex[0].checked) {
         genero = 'Homem';
         if (idade >= 0 && idade < 5) {
-            //Bebe
+            //Bebê
             img.setAttribute('src', 'img/bebe-masculino.png');
         } else if (idade >= 5 && idade < 10) {
             //Criança
@@ -42,12 +43,13 @@ function verificar() {
             img.setAttribute('src', 'img/idoso-masculino.png');
         } else {
             window.alert('Isso tudo???');
+            location.reload();
         }
 
     } else if (fsex[1].checked) {
         genero = 'Mulher';
         if (idade >= 0 && idade < 5) {
-            //Bebe
+            //Bebê
             img.setAttribute('src', 'img/bebe-feminino.png');
         } else if (idade >= 5 && idade < 10) {
             //Criança

@@ -28,6 +28,10 @@ footer {
     font-style: italic;
     font-size: 13pt;
 }
+footer p a {
+    color: black;
+    font-weight: bold;
+}
 footer p a:hover{
     color: aliceblue;
 }
