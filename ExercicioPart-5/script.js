@@ -3,7 +3,7 @@ function tabuada() {
     let tab = document.getElementById('seltab');
 
     if(num.value.length == 0) {
-        window.alert('Por favor, digite um número!');
+        window.alert('Por favor, digite um número entre 1 e 100!');
     } else {
         let n = Number(num.value);
 
